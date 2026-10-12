@@ -10,3 +10,7 @@ htmlcov/
 dist/
 .DS_Store
 *.log
+.env
+.env.*
+!.env.example
+*.zip
