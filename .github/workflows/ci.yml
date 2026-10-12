@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+# Proyecto en desarrollo: aún no hay app ejecutable ni tests que correr.
+# Por ahora se verifica que el código no tenga errores de sintaxis ni nombres indefinidos.
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install ruff==0.17.0
+      - name: Ruff (errores de sintaxis y nombres indefinidos)
+        run: ruff check --select E9,F63,F7,F82 .
