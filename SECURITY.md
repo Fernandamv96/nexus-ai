@@ -6,10 +6,7 @@ Este es un proyecto de portafolio/educativo. Solo la rama `main` recibe correcci
 
 ## Cómo reportar una vulnerabilidad
 
-**No abras un issue público.** Usa uno de estos canales privados:
-
-1. **GitHub Private Vulnerability Reporting**: pestaña *Security* → *Report a vulnerability*.
-2. **Correo**: [correo eliminado] con el asunto `[SECURITY] <nombre del repo>`.
+**No abras un issue público.** Usa el canal privado de GitHub: pestaña *Security* → *Report a vulnerability* (GitHub Private Vulnerability Reporting). El reporte solo lo ve la dueña del repositorio.
 
 Incluye, si puedes:
 
